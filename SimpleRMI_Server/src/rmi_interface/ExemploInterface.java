@@ -11,7 +11,7 @@ import java.rmi.RemoteException;
 
 /**
  *
- * @author FilipeAlmeida
+ * @author jorgeleal
  */
 public interface ExemploInterface extends Remote {
     public String mensagem(String msgdoCliente)throws RemoteException;
