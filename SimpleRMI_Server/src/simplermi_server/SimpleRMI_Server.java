@@ -41,6 +41,7 @@ public class SimpleRMI_Server extends UnicastRemoteObject implements ExemploInte
             /*if (System.getSecurityManager() == null) {
                 System.setSecurityManager(new SecurityManager());
             }*/
+            //System.setProperty("java.rmi.server.hostname", "xxx.xxx.xx.xxx"); //se quisermos especificar o IP do server para ligar a um PC numa rede local
 
             Registry rgsty = LocateRegistry.createRegistry(1099);
             rgsty.rebind("/RMIService", new SimpleRMI_Server());
